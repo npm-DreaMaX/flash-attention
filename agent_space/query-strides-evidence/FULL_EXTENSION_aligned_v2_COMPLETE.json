@@ -1,0 +1,20 @@
+{
+  "faquery": {
+    "library": "/opt/data/private/FangWang/research/mlp_redesign_20261027/fa2_current/agent_space/native_extensions_aligned_v2/faquery/_vllm_fa2_C.abi3.so",
+    "sha256": "342970284f8fbf109109b0b0a1baa5c8ad9eed058dc2995ca96bd2f83bb4d7db",
+    "product_cpp_sha256": "133c3254443a069548477e864424a4a4fdd4fdafa18226d7827b514e8fe604f1"
+  },
+  "fa207": {
+    "library": "/opt/data/private/FangWang/research/mlp_redesign_20261027/fa2_current/agent_space/native_extensions/fa207/_vllm_fa2_C.abi3.so",
+    "sha256": "4c60787281992473b2e4cb50a7fda42a874cd36768121f5ebc12ee3669b245b7",
+    "product_cpp_sha256": "353c96479387cb3dcb1c78047afce711c64041a104164de2bf137018e1ee4548"
+  },
+  "scope": "Full actual FA2 extension. Same CUDA objects, only flash_api.cpp recompiled between arms. No installed files modified.",
+  "cutlass_commit": "62750a2b75c802660e4894434dc55e839f322277",
+  "build_parallel_jobs": 8,
+  "memory_cgroup_limit_bytes": 96636764160,
+  "candidate_commit": "b2f1a6c59f37fb9c5a13cf68a222c6d9a6803626",
+  "baseline_commit": "78335fb69d81fc96b5b83a615b6e177109155b99",
+  "upstream_main_commit": "b273a02621d3c94bc747df67204f591b67f38fae",
+  "alignment_fallback": "Clone only for a pointer not aligned to16bytes, head stride not aligned to8elements, or a used batch stride not aligned to8elements. Regular inputs remain copy-free."
+}

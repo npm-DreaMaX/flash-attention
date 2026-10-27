@@ -1,0 +1,7 @@
+{
+  "upstream_helper": "tests.models.utils.check_logprobs_close",
+  "defaults_unchanged": true,
+  "passed": true,
+  "exact_texts": false,
+  "limits": "Uses the unchanged upstream common-prefix/top-logprob criterion; not an assertion of bitwise model equivalence."
+}

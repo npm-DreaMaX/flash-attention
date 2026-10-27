@@ -1,0 +1,26 @@
+{
+  "fa207": {
+    "returncode": 1,
+    "command": [
+      "/opt/data/private/FangWang/research/pr_engineering_20261026/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "-x",
+      "tests/test_varlen_decode_query_strides.py"
+    ],
+    "log": "/opt/data/private/FangWang/research/mlp_redesign_20261027/fa2_current/agent_space/regression_fa207_aligned_v2.log"
+  },
+  "faquery": {
+    "returncode": 0,
+    "command": [
+      "/opt/data/private/FangWang/research/pr_engineering_20261026/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "-x",
+      "tests/test_varlen_decode_query_strides.py"
+    ],
+    "log": "/opt/data/private/FangWang/research/mlp_redesign_20261027/fa2_current/agent_space/regression_faquery_aligned_v2.log"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "trials_per_build": 10,
+  "fresh_driver_cache_each_trial": true,
+  "unfixed_errors": 10,
+  "neutral_control_errors": 10,
+  "fixed_exact_passes": 10,
+  "binary_evidence": {
+    "unfixed": {
+      "library": "/opt/data/private/FangWang/research/mlp_redesign_20261027/fa2_current/agent_space/native_extensions/faquery/_vllm_fa2_C.abi3.so",
+      "sha256": "a96016fc9998adfcc783bdb28040e621cd055e1f231276d301374220feeed2d6",
+      "fatbin_sha256": "f686de5e5cff621ec464c3490b99951a28416794b7a8bed21d4c9d571e31fd5c",
+      "explicit_clone_dispatch_present": false
+    },
+    "fixed": {
+      "library": "/opt/data/private/FangWang/research/mlp_redesign_20261027/fa2_current/agent_space/native_extensions_aligned_v2/faquery/_vllm_fa2_C.abi3.so",
+      "sha256": "342970284f8fbf109109b0b0a1baa5c8ad9eed058dc2995ca96bd2f83bb4d7db",
+      "fatbin_sha256": "f686de5e5cff621ec464c3490b99951a28416794b7a8bed21d4c9d571e31fd5c",
+      "explicit_clone_dispatch_present": true
+    },
+    "neutral": {
+      "library": "/opt/data/private/FangWang/research/mlp_redesign_20261027/fa2_current/agent_space/alignment_repeat_v4/neutral_vllm_fa2_C.abi3.so",
+      "sha256": "b5ef1d171df3fb5cc59fa3b410833911fac13a8b971ec47bc30fee8c84281009",
+      "fatbin_sha256": "f686de5e5cff621ec464c3490b99951a28416794b7a8bed21d4c9d571e31fd5c",
+      "explicit_clone_dispatch_present": false
+    }
+  },
+  "limits": "Host disassembly is recorded. Embedded CUDA fatbins are identical; no claim of dumping the actual SM89 driver-JIT SASS."
+}

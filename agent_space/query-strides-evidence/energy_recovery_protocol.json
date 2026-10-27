@@ -1,0 +1,71 @@
+{
+  "rig_sha256": "d9d9196f19e34faee0860c5bc038f453491372f58638f5227e15a26b59fe8f37",
+  "date_utc": "2026-10-27T15:23:10.382925+00:00",
+  "scope": "Only query input stride delta beyond existing upstream #207 output fix; no MLP modifications.",
+  "rounds": [
+    [
+      "fa207",
+      "faquery"
+    ],
+    [
+      "faquery",
+      "fa207"
+    ]
+  ],
+  "selected_primary_rounds": [
+    2,
+    3
+  ],
+  "round1_status": "Timing JSONs retained; original NVML series overwritten by resume monitor. Exclude round1 from primary paired table before seeing recovery results.",
+  "repeats_per_card_and_mode": 3,
+  "workloads": {
+    "A": [
+      8192,
+      1024,
+      1,
+      16
+    ],
+    "B": [
+      8192,
+      1024,
+      4,
+      32
+    ],
+    "C": [
+      8192,
+      128,
+      1,
+      16
+    ],
+    "D": [
+      8192,
+      128,
+      4,
+      32
+    ]
+  },
+  "warmup": "2*concurrency before each workload; excluded",
+  "initial_thermal_warmup": "8 requests 8192/1024 C1 before formal workload warmups",
+  "negative_control": "A: B1 query reshape generally does not allocate; expect no speedup",
+  "same_math": "Full FA2 extensions; same compiled CUDA objects; only flash_api.cpp changed",
+  "build": {
+    "faquery": {
+      "library": "/opt/data/private/FangWang/research/mlp_redesign_20261027/fa2_current/agent_space/native_extensions_aligned_v2/faquery/_vllm_fa2_C.abi3.so",
+      "sha256": "342970284f8fbf109109b0b0a1baa5c8ad9eed058dc2995ca96bd2f83bb4d7db",
+      "product_cpp_sha256": "133c3254443a069548477e864424a4a4fdd4fdafa18226d7827b514e8fe604f1"
+    },
+    "fa207": {
+      "library": "/opt/data/private/FangWang/research/mlp_redesign_20261027/fa2_current/agent_space/native_extensions/fa207/_vllm_fa2_C.abi3.so",
+      "sha256": "4c60787281992473b2e4cb50a7fda42a874cd36768121f5ebc12ee3669b245b7",
+      "product_cpp_sha256": "353c96479387cb3dcb1c78047afce711c64041a104164de2bf137018e1ee4548"
+    },
+    "scope": "Full actual FA2 extension. Same CUDA objects, only flash_api.cpp recompiled between arms. No installed files modified.",
+    "cutlass_commit": "62750a2b75c802660e4894434dc55e839f322277",
+    "build_parallel_jobs": 8,
+    "memory_cgroup_limit_bytes": 96636764160,
+    "candidate_commit": "b2f1a6c59f37fb9c5a13cf68a222c6d9a6803626",
+    "baseline_commit": "78335fb69d81fc96b5b83a615b6e177109155b99",
+    "upstream_main_commit": "b273a02621d3c94bc747df67204f591b67f38fae",
+    "alignment_fallback": "Clone only for a pointer not aligned to16bytes, head stride not aligned to8elements, or a used batch stride not aligned to8elements. Regular inputs remain copy-free."
+  }
+}

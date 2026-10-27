@@ -1,0 +1,65 @@
+F
+=================================== FAILURES ===================================
+__________ test_varlen_decode_query_strides[False-num_heads0-dtype0] ___________
+
+dtype = torch.float16, num_heads = (8, 2), strided_query = False
+
+    @pytest.mark.parametrize("dtype", [torch.float16, torch.bfloat16])
+    @pytest.mark.parametrize("num_heads", [(8, 2), (24, 4), (8, 1)])
+    @pytest.mark.parametrize("strided_query", [False, True])
+    @torch.inference_mode()
+    def test_varlen_decode_query_strides(dtype, num_heads, strided_query):
+        torch.manual_seed(0)
+        batch, head_dim, kv_len = 8, 128, 257
+        heads, kv_heads = num_heads
+        factor = 2 if strided_query else 1
+        storage = torch.randn(
+            batch * factor, heads * factor, head_dim, device="cuda", dtype=dtype
+        )
+        query = storage[1::2, 1::2] if strided_query else storage
+        original = query.clone()
+        key = torch.randn(batch * kv_len, kv_heads, head_dim, device="cuda", dtype=dtype)
+        value = torch.randn_like(key)
+        cu_query = torch.arange(batch + 1, device="cuda", dtype=torch.int32)
+        cu_key = cu_query * kv_len
+        destination = torch.empty(batch, heads, head_dim, device="cuda", dtype=dtype)
+    
+        def run(out):
+            return flash_attn_varlen_func(
+                query,
+                key,
+                value,
+                max_seqlen_q=1,
+                cu_seqlens_q=cu_query,
+                max_seqlen_k=kv_len,
+                cu_seqlens_k=cu_key,
+                causal=True,
+                out=out,
+                fa_version=2,
+            )
+    
+        default = run(None).clone()
+        run(destination)
+        with torch.profiler.profile(
+            activities=[torch.profiler.ProfilerActivity.CPU], record_shapes=True
+        ) as prof:
+            returned = run(destination)
+        query_copies = [
+            event
+            for event in prof.events()
+            if event.name == "aten::clone"
+            and event.input_shapes
+            and math.prod(event.input_shapes[0]) == query.numel()
+        ]
+>       assert not query_copies, "GQA decode materialized another query tensor"
+E       AssertionError: GQA decode materialized another query tensor
+E       assert not [<FunctionEvent id=9 name=aten::clone overload_name= device_type=DeviceType.CPU node_id=-1 cpu_time=171.430us start_us...=[[8, 4, 2, 128], []] cpu_memory_usage=0 None_memory_usage=0 is_async=False is_remote=False seq_nr=-1 is_legacy=False>]
+
+tests/test_varlen_decode_query_strides.py:58: AssertionError
+----------------------------- Captured stderr call -----------------------------
+USDT:2026-10-27 13:52:30 1150324:1150324 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-27 13:52:30 1150324:1150324 SyncActivityProfilerHandler.cpp:46] profiler_stop
+=========================== short test summary info ============================
+FAILED tests/test_varlen_decode_query_strides.py::test_varlen_decode_query_strides[False-num_heads0-dtype0]
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!
+1 failed in 3.69s

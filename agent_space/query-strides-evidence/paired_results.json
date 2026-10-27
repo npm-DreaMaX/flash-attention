@@ -1,0 +1,1047 @@
+{
+  "baseline": "fa207",
+  "candidate": "faquery",
+  "results": [
+    {
+      "model": "4b",
+      "workload": "A",
+      "metric": "output_throughput",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 87.36121087214644,
+      "candidate_median": 87.38249572699553,
+      "baseline_min": 87.21877163630506,
+      "baseline_max": 87.51114995749448,
+      "candidate_min": 87.21361856376929,
+      "candidate_max": 87.553781943048,
+      "paired_geomean_change_percent": 0.016936880094192735,
+      "paired_min_change_percent": -0.016442945485728444,
+      "paired_max_change_percent": 0.05818694405710367,
+      "per_card_geomean_change_percent": {
+        "0": 0.044515252486695356,
+        "1": -0.010633890016246744
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "A",
+      "metric": "request_throughput",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 0.08531368249233051,
+      "candidate_median": 0.08533446848339407,
+      "baseline_min": 0.08517458167607916,
+      "baseline_max": 0.0854601073803657,
+      "candidate_min": 0.08516954937868094,
+      "candidate_max": 0.0855017401787578,
+      "paired_geomean_change_percent": 0.016936880094192735,
+      "paired_min_change_percent": -0.016442945485728444,
+      "paired_max_change_percent": 0.05818694405710367,
+      "per_card_geomean_change_percent": {
+        "0": 0.044515252486695356,
+        "1": -0.010633890016246744
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "A",
+      "metric": "p50_tpot_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 10.861858152916412,
+      "candidate_median": 10.859230522772812,
+      "baseline_min": 10.8502407377096,
+      "baseline_max": 10.872151069925735,
+      "candidate_min": 10.844959932054417,
+      "candidate_max": 10.871384982001455,
+      "paired_geomean_change_percent": -0.025460003707525988,
+      "paired_min_change_percent": -0.057695271621338584,
+      "paired_max_change_percent": -0.003003600811324336,
+      "per_card_geomean_change_percent": {
+        "0": -0.045188201479441845,
+        "1": -0.005727912158208865
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "A",
+      "metric": "p95_tpot_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 10.865169052236721,
+      "candidate_median": 10.86272315949726,
+      "baseline_min": 10.853572989397938,
+      "baseline_max": 10.87744895301446,
+      "candidate_min": 10.84901774183775,
+      "candidate_max": 10.875287065182322,
+      "paired_geomean_change_percent": -0.02830492868923803,
+      "paired_min_change_percent": -0.04197002742448719,
+      "paired_max_change_percent": -0.009844027723060478,
+      "per_card_geomean_change_percent": {
+        "0": -0.0376903395449228,
+        "1": -0.018918636642059897
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "A",
+      "metric": "p50_ttft_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 606.3031768426299,
+      "candidate_median": 608.0245948396623,
+      "baseline_min": 599.4350528344512,
+      "baseline_max": 616.469300352037,
+      "candidate_min": 597.4050154909492,
+      "candidate_max": 620.7098830491304,
+      "paired_geomean_change_percent": 0.0966724508192353,
+      "paired_min_change_percent": -0.6885709551104346,
+      "paired_max_change_percent": 1.5793269267846188,
+      "per_card_geomean_change_percent": {
+        "0": -0.30347331261098986,
+        "1": 0.4984242544728398
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "A",
+      "metric": "p95_ttft_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 631.6027203574777,
+      "candidate_median": 625.9415049571544,
+      "baseline_min": 617.2317848540843,
+      "baseline_max": 634.7046494483948,
+      "candidate_min": 617.507787887007,
+      "candidate_max": 642.9062657989562,
+      "paired_geomean_change_percent": -0.03166221382288645,
+      "paired_min_change_percent": -2.2256450629321245,
+      "paired_max_change_percent": 1.292194150096293,
+      "per_card_geomean_change_percent": {
+        "0": -0.6609291731642112,
+        "1": 0.6015908599729306
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "A",
+      "metric": "p50_e2el_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 11717.837685719132,
+      "candidate_median": 11717.247209977359,
+      "baseline_min": 11700.450994074345,
+      "baseline_max": 11738.457986153662,
+      "candidate_min": 11692.93107651174,
+      "candidate_max": 11739.457270130515,
+      "paired_geomean_change_percent": -0.018670563562240238,
+      "paired_min_change_percent": -0.06427032228426555,
+      "paired_max_change_percent": 0.03750209663633264,
+      "per_card_geomean_change_percent": {
+        "0": -0.045033921554792966,
+        "1": 0.007699747828146655
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "A",
+      "metric": "p95_e2el_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 11739.126020343974,
+      "candidate_median": 11735.934853320941,
+      "baseline_min": 11716.468562372029,
+      "baseline_max": 11753.436101600528,
+      "candidate_min": 11709.015343338251,
+      "candidate_max": 11763.264961540699,
+      "paired_geomean_change_percent": -0.005595219794742248,
+      "paired_min_change_percent": -0.09624943363543137,
+      "paired_max_change_percent": 0.08782899033714653,
+      "per_card_geomean_change_percent": {
+        "0": -0.054828756591826296,
+        "1": 0.04366256971125604
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "A",
+      "metric": "gpu_memory_median_mib",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 15871.0,
+      "candidate_median": 15871.0,
+      "baseline_min": 15868.0,
+      "baseline_max": 15874.0,
+      "candidate_min": 15868.0,
+      "candidate_max": 15874.0,
+      "paired_geomean_change_percent": 0.0,
+      "paired_min_change_percent": 0.0,
+      "paired_max_change_percent": 0.0,
+      "per_card_geomean_change_percent": {
+        "0": 0.0,
+        "1": 0.0
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "A",
+      "metric": "gpu_memory_peak_mib",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 15871.0,
+      "candidate_median": 15871.0,
+      "baseline_min": 15868.0,
+      "baseline_max": 15874.0,
+      "candidate_min": 15868.0,
+      "candidate_max": 15874.0,
+      "paired_geomean_change_percent": 0.0,
+      "paired_min_change_percent": 0.0,
+      "paired_max_change_percent": 0.0,
+      "per_card_geomean_change_percent": {
+        "0": 0.0,
+        "1": 0.0
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "A",
+      "metric": "gpu_sm_clock_median_mhz",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 2737.5,
+      "candidate_median": 2737.5,
+      "baseline_min": 2715.0,
+      "baseline_max": 2760.0,
+      "candidate_min": 2715.0,
+      "candidate_max": 2775.0,
+      "paired_geomean_change_percent": 0.09037527168240335,
+      "paired_min_change_percent": 0.0,
+      "paired_max_change_percent": 0.5434782608695565,
+      "per_card_geomean_change_percent": {
+        "0": 0.1808322202621234,
+        "1": 0.0
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "A",
+      "metric": "gpu_board_power_mean_w",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 322.98607203907204,
+      "candidate_median": 322.47642857142864,
+      "baseline_min": 315.20373626373623,
+      "baseline_max": 334.0791208791209,
+      "candidate_min": 312.757,
+      "candidate_max": 333.84857142857146,
+      "paired_geomean_change_percent": -0.18820232927971164,
+      "paired_min_change_percent": -1.0381811527056195,
+      "paired_max_change_percent": 1.1189941607560705,
+      "per_card_geomean_change_percent": {
+        "0": -0.9062605602406744,
+        "1": 0.5350591327427274
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "A",
+      "metric": "estimated_gpu_board_joules_per_output_token",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 3.695009384714001,
+      "candidate_median": 3.696878547664166,
+      "baseline_min": 3.60145546264776,
+      "baseline_max": 3.8224248268717105,
+      "candidate_min": 3.575322109274959,
+      "candidate_max": 3.822364773365493,
+      "paired_geomean_change_percent": -0.0850348788809173,
+      "paired_min_change_percent": -0.841718953905024,
+      "paired_max_change_percent": 0.8939062530483932,
+      "per_card_geomean_change_percent": {
+        "0": -0.6569270108839881,
+        "1": 0.4901494868009209
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "B",
+      "metric": "output_throughput",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 228.4679386044913,
+      "candidate_median": 229.28545261179943,
+      "baseline_min": 227.86033273694474,
+      "baseline_max": 228.9849290460596,
+      "candidate_min": 228.4344100285061,
+      "candidate_max": 230.0041050737764,
+      "paired_geomean_change_percent": 0.3656254234650371,
+      "paired_min_change_percent": 0.2519426197029606,
+      "paired_max_change_percent": 0.44508432583867386,
+      "per_card_geomean_change_percent": {
+        "0": 0.4411959354095968,
+        "1": 0.29011176968731206
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "B",
+      "metric": "request_throughput",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 0.22311322129344854,
+      "candidate_median": 0.22391157481621038,
+      "baseline_min": 0.2225198561884226,
+      "baseline_max": 0.22361809477154257,
+      "candidate_min": 0.223080478543463,
+      "candidate_max": 0.22461338386110977,
+      "paired_geomean_change_percent": 0.3656254234650371,
+      "paired_min_change_percent": 0.2519426197029606,
+      "paired_max_change_percent": 0.44508432583867386,
+      "per_card_geomean_change_percent": {
+        "0": 0.4411959354095968,
+        "1": 0.29011176968731206
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "B",
+      "metric": "p50_tpot_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 15.648113353813354,
+      "candidate_median": 15.678462066222437,
+      "baseline_min": 15.607197306511281,
+      "baseline_max": 15.849981390536998,
+      "candidate_min": 15.539581566968913,
+      "candidate_max": 15.825678890285136,
+      "paired_geomean_change_percent": -0.15173824904532868,
+      "paired_min_change_percent": -1.9583608076247039,
+      "paired_max_change_percent": 1.0717507930085413,
+      "per_card_geomean_change_percent": {
+        "0": -0.4505765297590873,
+        "1": 0.1479971169041536
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "B",
+      "metric": "p95_tpot_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 16.915590115545186,
+      "candidate_median": 16.85546271326357,
+      "baseline_min": 16.881366237863272,
+      "baseline_max": 16.95588230640643,
+      "candidate_min": 16.800277724858457,
+      "candidate_max": 16.910013576326772,
+      "paired_geomean_change_percent": -0.37314939706541245,
+      "paired_min_change_percent": -0.507747763197075,
+      "paired_max_change_percent": -0.24027530110574125,
+      "per_card_geomean_change_percent": {
+        "0": -0.44739014322327564,
+        "1": -0.29885328632797664
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "B",
+      "metric": "p50_ttft_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 1937.7581421285868,
+      "candidate_median": 1813.9741378836334,
+      "baseline_min": 1678.4976413473487,
+      "baseline_max": 1982.0958161726594,
+      "candidate_min": 1674.6545284986496,
+      "candidate_max": 1982.6017692685127,
+      "paired_geomean_change_percent": -2.102440621561304,
+      "paired_min_change_percent": -12.425242439315143,
+      "paired_max_change_percent": 14.119574570428917,
+      "per_card_geomean_change_percent": {
+        "0": -0.13306127132958825,
+        "1": -4.032983745565474
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "B",
+      "metric": "p95_ttft_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 2242.2731400933117,
+      "candidate_median": 2244.632903719321,
+      "baseline_min": 2216.372570861131,
+      "baseline_max": 2282.6926292851567,
+      "candidate_min": 2204.5482128858566,
+      "candidate_max": 2277.2353232838213,
+      "paired_geomean_change_percent": -0.1228784021694308,
+      "paired_min_change_percent": -0.5335004651623287,
+      "paired_max_change_percent": 0.43536816724378813,
+      "per_card_geomean_change_percent": {
+        "0": -0.29895191464520493,
+        "1": 0.0535060587105067
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "B",
+      "metric": "p50_e2el_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 17926.12063884735,
+      "candidate_median": 17860.520964488387,
+      "baseline_min": 17885.236942209303,
+      "baseline_max": 17973.425762727857,
+      "candidate_min": 17802.801098674536,
+      "candidate_max": 17929.610323160887,
+      "paired_geomean_change_percent": -0.3694677719815464,
+      "paired_min_change_percent": -0.4609155797104303,
+      "paired_max_change_percent": -0.22375943580448254,
+      "per_card_geomean_change_percent": {
+        "0": -0.45060593165930934,
+        "1": -0.28826348029949045
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "B",
+      "metric": "p95_e2el_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 17949.13968271576,
+      "candidate_median": 17886.830419115722,
+      "baseline_min": 17904.503346327692,
+      "baseline_max": 18003.77868330106,
+      "candidate_min": 17837.88701882586,
+      "candidate_max": 17952.284320723265,
+      "paired_geomean_change_percent": -0.3414492709681692,
+      "paired_min_change_percent": -0.4582150698623888,
+      "paired_max_change_percent": -0.20535589509318442,
+      "per_card_geomean_change_percent": {
+        "0": -0.4129392201110886,
+        "1": -0.26990800177635554
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "B",
+      "metric": "gpu_memory_median_mib",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 15871.0,
+      "candidate_median": 15871.0,
+      "baseline_min": 15868.0,
+      "baseline_max": 15874.0,
+      "candidate_min": 15868.0,
+      "candidate_max": 15874.0,
+      "paired_geomean_change_percent": 0.0,
+      "paired_min_change_percent": 0.0,
+      "paired_max_change_percent": 0.0,
+      "per_card_geomean_change_percent": {
+        "0": 0.0,
+        "1": 0.0
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "B",
+      "metric": "gpu_memory_peak_mib",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 15871.0,
+      "candidate_median": 15871.0,
+      "baseline_min": 15868.0,
+      "baseline_max": 15874.0,
+      "candidate_min": 15868.0,
+      "candidate_max": 15874.0,
+      "paired_geomean_change_percent": 0.0,
+      "paired_min_change_percent": 0.0,
+      "paired_max_change_percent": 0.0,
+      "per_card_geomean_change_percent": {
+        "0": 0.0,
+        "1": 0.0
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "B",
+      "metric": "gpu_sm_clock_median_mhz",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 2737.5,
+      "candidate_median": 2745.0,
+      "baseline_min": 2715.0,
+      "baseline_max": 2775.0,
+      "candidate_min": 2715.0,
+      "candidate_max": 2775.0,
+      "paired_geomean_change_percent": 0.09037527168240335,
+      "paired_min_change_percent": 0.0,
+      "paired_max_change_percent": 0.5434782608695565,
+      "per_card_geomean_change_percent": {
+        "0": 0.1808322202621234,
+        "1": 0.0
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "B",
+      "metric": "gpu_board_power_mean_w",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 319.58922877846794,
+      "candidate_median": 321.21573949579835,
+      "baseline_min": 312.41,
+      "baseline_max": 327.5918840579711,
+      "candidate_min": 311.3813043478261,
+      "candidate_max": 329.50086956521744,
+      "paired_geomean_change_percent": 0.27130407170511983,
+      "paired_min_change_percent": -1.1619797680548993,
+      "paired_max_change_percent": 1.2554045901038924,
+      "per_card_geomean_change_percent": {
+        "0": -0.3192314446666117,
+        "1": 0.8653380783187564
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "B",
+      "metric": "estimated_gpu_board_joules_per_output_token",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 1.396122841566056,
+      "candidate_median": 1.4011681037180534,
+      "baseline_min": 1.3645651018209581,
+      "baseline_max": 1.4303170098277345,
+      "candidate_min": 1.3573995952175897,
+      "candidate_max": 1.4406300709870112,
+      "paired_geomean_change_percent": 0.18990943079760703,
+      "paired_min_change_percent": -0.9454914417791005,
+      "paired_max_change_percent": 1.2112009267962964,
+      "per_card_geomean_change_percent": {
+        "0": -0.5340122295554202,
+        "1": 0.9190998526848558
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "C",
+      "metric": "output_throughput",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 65.02154449446,
+      "candidate_median": 65.00652724948725,
+      "baseline_min": 64.68296165155094,
+      "baseline_max": 65.35183786915879,
+      "candidate_min": 64.58678660486045,
+      "candidate_max": 65.31132697991555,
+      "paired_geomean_change_percent": -0.06488722477505993,
+      "paired_min_change_percent": -0.24657148076177027,
+      "paired_max_change_percent": 0.10463671463631918,
+      "per_card_geomean_change_percent": {
+        "0": 0.02216546918994357,
+        "1": -0.15186415381844812
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "C",
+      "metric": "request_throughput",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 0.5079808163629688,
+      "candidate_median": 0.5078634941366191,
+      "baseline_min": 0.5053356379027417,
+      "baseline_max": 0.510561233352803,
+      "candidate_min": 0.5045842703504723,
+      "candidate_max": 0.5102447420305902,
+      "paired_geomean_change_percent": -0.06488722477505993,
+      "paired_min_change_percent": -0.24657148076177027,
+      "paired_max_change_percent": 0.10463671463631918,
+      "per_card_geomean_change_percent": {
+        "0": 0.02216546918994357,
+        "1": -0.15186415381844812
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "C",
+      "metric": "p50_tpot_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 10.735459383723773,
+      "candidate_median": 10.73318833162583,
+      "baseline_min": 10.724422910551386,
+      "baseline_max": 10.747124653632246,
+      "candidate_min": 10.720349958269145,
+      "candidate_max": 10.759814965032685,
+      "paired_geomean_change_percent": 0.00941128975990384,
+      "paired_min_change_percent": -0.08075482474049211,
+      "paired_max_change_percent": 0.12142867991531414,
+      "per_card_geomean_change_percent": {
+        "0": -0.0366128126679636,
+        "1": 0.055456582126046594
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "C",
+      "metric": "p95_tpot_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 10.759003143244255,
+      "candidate_median": 10.763912348032703,
+      "baseline_min": 10.746412848188417,
+      "baseline_max": 10.774164511932163,
+      "candidate_min": 10.73815323427085,
+      "candidate_max": 10.802587237590412,
+      "paired_geomean_change_percent": 0.05272270701522013,
+      "paired_min_change_percent": -0.18217446573925988,
+      "paired_max_change_percent": 0.2819108362520639,
+      "per_card_geomean_change_percent": {
+        "0": -0.06842063359819332,
+        "1": 0.17401290519926368
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "C",
+      "metric": "p50_ttft_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 602.8078668750823,
+      "candidate_median": 603.5993616096675,
+      "baseline_min": 596.3531341403723,
+      "baseline_max": 612.2009037062526,
+      "candidate_min": 593.9071010798216,
+      "candidate_max": 614.0531990677118,
+      "paired_geomean_change_percent": 0.06559252765541936,
+      "paired_min_change_percent": -0.41016520590213545,
+      "paired_max_change_percent": 0.3575755290119442,
+      "per_card_geomean_change_percent": {
+        "0": -0.18189177084395772,
+        "1": 0.31369042702432115
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "C",
+      "metric": "p95_ttft_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 622.276512440294,
+      "candidate_median": 625.7962679956108,
+      "baseline_min": 610.4723233729601,
+      "baseline_max": 638.1703577935696,
+      "candidate_min": 609.9360822699964,
+      "candidate_max": 642.2046795487404,
+      "paired_geomean_change_percent": 0.41059161199833544,
+      "paired_min_change_percent": -0.5662024398083165,
+      "paired_max_change_percent": 2.0820815246907376,
+      "per_card_geomean_change_percent": {
+        "0": 0.1272174604401867,
+        "1": 0.6947677523843774
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "C",
+      "metric": "p50_e2el_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 1966.6882515884936,
+      "candidate_median": 1966.738022863865,
+      "baseline_min": 1958.317520096898,
+      "baseline_max": 1976.0802052915096,
+      "candidate_min": 1954.9868553876877,
+      "candidate_max": 1978.554604575038,
+      "paired_geomean_change_percent": 0.010477582053890764,
+      "paired_min_change_percent": -0.2393579251104172,
+      "paired_max_change_percent": 0.19999556733945045,
+      "per_card_geomean_change_percent": {
+        "0": -0.10013921902762041,
+        "1": 0.12121686655615803
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "C",
+      "metric": "p95_e2el_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 1983.8013513945043,
+      "candidate_median": 1989.3336163368076,
+      "baseline_min": 1972.8833539411426,
+      "baseline_max": 2003.1925486400723,
+      "candidate_min": 1972.1378814429045,
+      "candidate_max": 2007.0548723451793,
+      "paired_geomean_change_percent": 0.17672943114440545,
+      "paired_min_change_percent": -0.13608427568210235,
+      "paired_max_change_percent": 0.6928900486116607,
+      "per_card_geomean_change_percent": {
+        "0": 0.04500751237400838,
+        "1": 0.30862477849775716
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "C",
+      "metric": "gpu_memory_median_mib",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 15871.0,
+      "candidate_median": 15871.0,
+      "baseline_min": 15868.0,
+      "baseline_max": 15874.0,
+      "candidate_min": 15868.0,
+      "candidate_max": 15874.0,
+      "paired_geomean_change_percent": 0.0,
+      "paired_min_change_percent": 0.0,
+      "paired_max_change_percent": 0.0,
+      "per_card_geomean_change_percent": {
+        "0": 0.0,
+        "1": 0.0
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "C",
+      "metric": "gpu_memory_peak_mib",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 15871.0,
+      "candidate_median": 15871.0,
+      "baseline_min": 15868.0,
+      "baseline_max": 15874.0,
+      "candidate_min": 15868.0,
+      "candidate_max": 15874.0,
+      "paired_geomean_change_percent": 0.0,
+      "paired_min_change_percent": 0.0,
+      "paired_max_change_percent": 0.0,
+      "per_card_geomean_change_percent": {
+        "0": 0.0,
+        "1": 0.0
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "C",
+      "metric": "gpu_sm_clock_median_mhz",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 2737.5,
+      "candidate_median": 2745.0,
+      "baseline_min": 2715.0,
+      "baseline_max": 2760.0,
+      "candidate_min": 2715.0,
+      "candidate_max": 2775.0,
+      "paired_geomean_change_percent": 0.27137091955487797,
+      "paired_min_change_percent": 0.0,
+      "paired_max_change_percent": 0.5434782608695565,
+      "per_card_geomean_change_percent": {
+        "0": 0.5434782608695565,
+        "1": 0.0
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "C",
+      "metric": "gpu_board_power_mean_w",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 335.5471041666667,
+      "candidate_median": 331.47545833333334,
+      "baseline_min": 326.28812500000004,
+      "baseline_max": 352.76733333333334,
+      "candidate_min": 329.58266666666674,
+      "candidate_max": 354.97200000000004,
+      "paired_geomean_change_percent": 0.37926489368705896,
+      "paired_min_change_percent": -3.2023075290218084,
+      "paired_max_change_percent": 6.605601364959646,
+      "per_card_geomean_change_percent": {
+        "0": -0.34549324127438164,
+        "1": 1.1092939829813984
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "C",
+      "metric": "estimated_gpu_board_joules_per_output_token",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 5.18016014045706,
+      "candidate_median": 5.162588016315876,
+      "baseline_min": 5.058431330396714,
+      "baseline_max": 5.438593211705987,
+      "candidate_min": 5.039457496299654,
+      "candidate_max": 5.495616881607948,
+      "paired_geomean_change_percent": 0.5256030084686445,
+      "paired_min_change_percent": -2.3264047646899155,
+      "paired_max_change_percent": 4.638079257647965,
+      "per_card_geomean_change_percent": {
+        "0": -0.7986307776712281,
+        "1": 1.8675139207822926
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "D",
+      "metric": "output_throughput",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 124.33124857128945,
+      "candidate_median": 124.55524002061387,
+      "baseline_min": 123.37800513803441,
+      "baseline_max": 125.20815868564215,
+      "candidate_min": 123.48907602670825,
+      "candidate_max": 125.58313511198808,
+      "paired_geomean_change_percent": 0.19831463545002706,
+      "paired_min_change_percent": 0.01966714098136091,
+      "paired_max_change_percent": 0.38023230643948747,
+      "per_card_geomean_change_percent": {
+        "0": 0.3014785821467225,
+        "1": 0.09525679685909914
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "D",
+      "metric": "request_throughput",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 0.9713378794631988,
+      "candidate_median": 0.9730878126610458,
+      "baseline_min": 0.9638906651408938,
+      "baseline_max": 0.9781887397315793,
+      "candidate_min": 0.9647584064586582,
+      "candidate_max": 0.9811182430624069,
+      "paired_geomean_change_percent": 0.19831463545002706,
+      "paired_min_change_percent": 0.01966714098136091,
+      "paired_max_change_percent": 0.38023230643948747,
+      "per_card_geomean_change_percent": {
+        "0": 0.3014785821467225,
+        "1": 0.09525679685909914
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "D",
+      "metric": "p50_tpot_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 18.13638274829219,
+      "candidate_median": 18.961147881868317,
+      "baseline_min": 17.099782325855394,
+      "baseline_max": 19.142943126420807,
+      "candidate_min": 17.08356196456772,
+      "candidate_max": 19.130918197333813,
+      "paired_geomean_change_percent": 1.4415099692666264,
+      "paired_min_change_percent": -10.596231464172146,
+      "paired_max_change_percent": 11.878138755060519,
+      "per_card_geomean_change_percent": {
+        "0": 3.2099321387671997,
+        "1": -0.2966116574007594
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "D",
+      "metric": "p95_tpot_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 27.514089378858294,
+      "candidate_median": 27.45478386866061,
+      "baseline_min": 27.323828073673123,
+      "baseline_max": 27.70444175712471,
+      "candidate_min": 27.237988641764233,
+      "candidate_max": 27.691314033577292,
+      "paired_geomean_change_percent": -0.18922427744945086,
+      "paired_min_change_percent": -0.36651536786813654,
+      "paired_max_change_percent": 0.06493795964768179,
+      "per_card_geomean_change_percent": {
+        "0": -0.3318407823558579,
+        "1": -0.04640370067464197
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "D",
+      "metric": "p50_ttft_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 1811.8815440684557,
+      "candidate_median": 1698.3400345779955,
+      "baseline_min": 1673.885545693338,
+      "baseline_max": 1974.3851209059358,
+      "candidate_min": 1673.366048373282,
+      "candidate_max": 1969.2938076332211,
+      "paired_geomean_change_percent": -2.0769481734318243,
+      "paired_min_change_percent": -13.060642342954388,
+      "paired_max_change_percent": 14.795462937840199,
+      "per_card_geomean_change_percent": {
+        "0": -4.229887976168393,
+        "1": 0.12439033842449425
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "D",
+      "metric": "p95_ttft_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 2240.6598487868905,
+      "candidate_median": 2242.6795253530145,
+      "baseline_min": 2210.8025114051998,
+      "baseline_max": 2282.5639883056283,
+      "candidate_min": 2206.0860769823194,
+      "candidate_max": 2276.6194340772927,
+      "paired_geomean_change_percent": -0.08318128461058888,
+      "paired_min_change_percent": -0.36210915775869434,
+      "paired_max_change_percent": 0.40660333054893805,
+      "per_card_geomean_change_percent": {
+        "0": -0.013259386837516788,
+        "1": -0.15305428518231
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "D",
+      "metric": "p50_e2el_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 4114.278129301965,
+      "candidate_median": 4106.836728751659,
+      "baseline_min": 4085.0875955075026,
+      "baseline_max": 4148.662674240768,
+      "candidate_min": 4073.3483461663127,
+      "candidate_max": 4140.87391924113,
+      "paired_geomean_change_percent": -0.21393909141792486,
+      "paired_min_change_percent": -0.3794712476096529,
+      "paired_max_change_percent": -0.020053247213247527,
+      "per_card_geomean_change_percent": {
+        "0": -0.32982532373585893,
+        "1": -0.09791811850297202
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "D",
+      "metric": "p95_e2el_ms",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 4146.929825562984,
+      "candidate_median": 4139.431704254821,
+      "baseline_min": 4110.5245146900415,
+      "baseline_max": 4209.372785501182,
+      "candidate_min": 4104.172999504954,
+      "candidate_max": 4170.018293149769,
+      "paired_geomean_change_percent": -0.3204231956636831,
+      "paired_min_change_percent": -1.0924170674684097,
+      "paired_max_change_percent": -0.01911614450822441,
+      "per_card_geomean_change_percent": {
+        "0": -0.12498392851187098,
+        "1": -0.5154800197516813
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "D",
+      "metric": "gpu_memory_median_mib",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 15871.0,
+      "candidate_median": 15871.0,
+      "baseline_min": 15868.0,
+      "baseline_max": 15874.0,
+      "candidate_min": 15868.0,
+      "candidate_max": 15874.0,
+      "paired_geomean_change_percent": 0.0,
+      "paired_min_change_percent": 0.0,
+      "paired_max_change_percent": 0.0,
+      "per_card_geomean_change_percent": {
+        "0": 0.0,
+        "1": 0.0
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "D",
+      "metric": "gpu_memory_peak_mib",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 15871.0,
+      "candidate_median": 15871.0,
+      "baseline_min": 15868.0,
+      "baseline_max": 15874.0,
+      "candidate_min": 15868.0,
+      "candidate_max": 15874.0,
+      "paired_geomean_change_percent": 0.0,
+      "paired_min_change_percent": 0.0,
+      "paired_max_change_percent": 0.0,
+      "per_card_geomean_change_percent": {
+        "0": 0.0,
+        "1": 0.0
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "D",
+      "metric": "gpu_sm_clock_median_mhz",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 2700.0,
+      "candidate_median": 2700.0,
+      "baseline_min": 2670.0,
+      "baseline_max": 2745.0,
+      "candidate_min": 2632.5,
+      "candidate_max": 2752.5,
+      "paired_geomean_change_percent": -0.007114266213505095,
+      "paired_min_change_percent": -1.9553072625698276,
+      "paired_max_change_percent": 1.104972375690605,
+      "per_card_geomean_change_percent": {
+        "0": 0.45830154475197266,
+        "1": -0.4703738404741431
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "D",
+      "metric": "gpu_board_power_mean_w",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 377.79825,
+      "candidate_median": 369.85875,
+      "baseline_min": 354.1275,
+      "baseline_max": 385.305,
+      "candidate_min": 356.621875,
+      "candidate_max": 376.63750000000005,
+      "paired_geomean_change_percent": -1.6067446161589172,
+      "paired_min_change_percent": -5.31592830365013,
+      "paired_max_change_percent": 1.997691509413979,
+      "per_card_geomean_change_percent": {
+        "0": -0.6349150500828926,
+        "1": -2.569069307298483
+      }
+    },
+    {
+      "model": "4b",
+      "workload": "D",
+      "metric": "estimated_gpu_board_joules_per_output_token",
+      "status": "measured",
+      "pairs": 6,
+      "baseline_median": 2.9711432819984207,
+      "candidate_median": 2.9874287795316254,
+      "baseline_min": 2.8541003400595772,
+      "baseline_max": 3.08423448060951,
+      "candidate_min": 2.891431281773186,
+      "candidate_max": 3.0638386849129486,
+      "paired_geomean_change_percent": 0.019726024225978387,
+      "paired_min_change_percent": -1.7275136216643672,
+      "paired_max_change_percent": 1.3507049894136536,
+      "per_card_geomean_change_percent": {
+        "0": 0.581827552003913,
+        "1": -0.539234199250571
+      }
+    }
+  ],
+  "limits": "Within-card paired repeats with exchanged roles, not randomized trials. Positive latency/energy change means regression. NVML board energy is approximate; unknown values are retained."
+}

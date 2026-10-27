@@ -1,0 +1,5 @@
+{
+  "cases_per_arm": 216,
+  "bit_exact_output_and_lse": true,
+  "provided_out_alias_and_query_immutability": true
+}

@@ -1,0 +1,72 @@
+{
+  "torch": "2.14.0+cu126",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "source_commit": "b2f1a6c59f37fb9c5a13cf68a222c6d9a6803626",
+  "shape": "32 Q /8 KV heads, head_dim128, BF16, page16, heterogeneous lengths",
+  "timing": "CUDA Graph replay; preallocated output; independent KV banks",
+  "rows": [
+    {
+      "batch": 1,
+      "context": 128,
+      "repeat": 1,
+      "mean_us": 6.401331486713238,
+      "layer_banks": 36
+    },
+    {
+      "batch": 1,
+      "context": 2048,
+      "repeat": 1,
+      "mean_us": 18.117283008716726,
+      "layer_banks": 36
+    },
+    {
+      "batch": 1,
+      "context": 8192,
+      "repeat": 1,
+      "mean_us": 46.489458084106445,
+      "layer_banks": 36
+    },
+    {
+      "batch": 4,
+      "context": 128,
+      "repeat": 1,
+      "mean_us": 8.382184370189693,
+      "layer_banks": 12
+    },
+    {
+      "batch": 4,
+      "context": 2048,
+      "repeat": 1,
+      "mean_us": 45.311827611441565,
+      "layer_banks": 12
+    },
+    {
+      "batch": 4,
+      "context": 8192,
+      "repeat": 1,
+      "mean_us": 152.89237784139763,
+      "layer_banks": 12
+    },
+    {
+      "batch": 16,
+      "context": 128,
+      "repeat": 1,
+      "mean_us": 9.297535395381427,
+      "layer_banks": 12
+    },
+    {
+      "batch": 16,
+      "context": 2048,
+      "repeat": 1,
+      "mean_us": 148.14099514123166,
+      "layer_banks": 12
+    },
+    {
+      "batch": 16,
+      "context": 8192,
+      "repeat": 1,
+      "mean_us": 570.9738685971214,
+      "layer_banks": 12
+    }
+  ]
+}

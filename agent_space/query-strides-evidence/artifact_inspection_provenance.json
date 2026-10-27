@@ -1,0 +1,25 @@
+{
+  "cause": "The earlier post-benchmark objcopy --dump-section invocation omitted an explicit output ELF and rewrote its input container. This happened only after all serving timing and profiling finished. CUDA fatbin and host .text contents are identical; exact originally measured full-file SHA256 containers are deterministically rebuilt and restored. No original benchmark JSON or build record was altered.",
+  "records": [
+    {
+      "label": "unfixed",
+      "post_inspection_container_sha256": "7c08933b9cb96ffbda5e401af32a5727bb6e55ba3a259612f028b15abe84cf75",
+      "restored_measured_container_sha256": "a96016fc9998adfcc783bdb28040e621cd055e1f231276d301374220feeed2d6",
+      "expected_sha256": "a96016fc9998adfcc783bdb28040e621cd055e1f231276d301374220feeed2d6",
+      "sections_identical_before_and_after": {
+        ".text": "e467edec57cd0676273637e5a1ce927f5bea70737ef9346eb0bdcea31a54d508",
+        ".nv_fatbin": "f686de5e5cff621ec464c3490b99951a28416794b7a8bed21d4c9d571e31fd5c"
+      }
+    },
+    {
+      "label": "fixed",
+      "post_inspection_container_sha256": "ce84a0613468dd3d25b5716c9cc1f78deaf7c1001b26248cc7ae7cf1f2467e4a",
+      "restored_measured_container_sha256": "342970284f8fbf109109b0b0a1baa5c8ad9eed058dc2995ca96bd2f83bb4d7db",
+      "expected_sha256": "342970284f8fbf109109b0b0a1baa5c8ad9eed058dc2995ca96bd2f83bb4d7db",
+      "sections_identical_before_and_after": {
+        ".text": "df4c913fbac082acce4aa44c01e9b54500d36d4471b01fa4dd7242fda6ff26e7",
+        ".nv_fatbin": "f686de5e5cff621ec464c3490b99951a28416794b7a8bed21d4c9d571e31fd5c"
+      }
+    }
+  ]
+}

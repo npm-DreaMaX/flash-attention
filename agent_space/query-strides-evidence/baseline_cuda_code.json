@@ -1,0 +1,7 @@
+{
+  "baseline_library_sha256": "4c60787281992473b2e4cb50a7fda42a874cd36768121f5ebc12ee3669b245b7",
+  "library_unmodified": true,
+  "baseline_cuda_fatbin_sha256": "f686de5e5cff621ec464c3490b99951a28416794b7a8bed21d4c9d571e31fd5c",
+  "matches_candidate_and_neutral_controls": true,
+  "scope": "The original #207 serving baseline and candidate embed byte-identical CUDA code."
+}

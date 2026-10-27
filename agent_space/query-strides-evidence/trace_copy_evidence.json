@@ -1,0 +1,42 @@
+{
+  "scope": "Mechanism evidence from fixed-source round1, separate profiled executions; not serving timing or energy qualification.",
+  "rows": [
+    {
+      "file": "round1_trace_fixed/4b_round1_gpu0_fa207/trace/rank0.1793111115566707000.pt.trace.json.gz",
+      "sha256": "b14947fba5fba6a702ec9242a126186d432305f65565ad3f06db5e83d00a79a5",
+      "query_copy_calls": 288,
+      "query_copy_total_us": 464.9010000000015,
+      "query_copy_median_us": 1.6,
+      "fp32_lse_copy_calls": 0,
+      "attention_calls": 288
+    },
+    {
+      "file": "round1_trace_fixed/4b_round1_gpu0_fa207/trace/rank0.1793111131982926729.pt.trace.json.gz",
+      "sha256": "52e2eaa6785cd08f9a8932ffaf8beee2271a77b81585188dfee37f4ba9ad4628",
+      "query_copy_calls": 288,
+      "query_copy_total_us": 491.39700000000227,
+      "query_copy_median_us": 1.696,
+      "fp32_lse_copy_calls": 288,
+      "attention_calls": 288
+    },
+    {
+      "file": "round1_trace_fixed/4b_round1_gpu1_faquery/trace/rank0.1793111114820749244.pt.trace.json.gz",
+      "sha256": "1208f46344b4904a508c934be01d159e54fa6e874c977526d20130e433b08083",
+      "query_copy_calls": 0,
+      "query_copy_total_us": 0,
+      "query_copy_median_us": null,
+      "fp32_lse_copy_calls": 0,
+      "attention_calls": 288
+    },
+    {
+      "file": "round1_trace_fixed/4b_round1_gpu1_faquery/trace/rank0.1793111131047202225.pt.trace.json.gz",
+      "sha256": "152c214be80a9426cc094b5389417e2b4daab2e4a498ea0763b0d0bd99e8a4fe",
+      "query_copy_calls": 0,
+      "query_copy_total_us": 0,
+      "query_copy_median_us": null,
+      "fp32_lse_copy_calls": 288,
+      "attention_calls": 288
+    }
+  ],
+  "limits": "Profiler disturbs timing; summed copy time is not necessarily exposed end-to-end time. FP32 LSE layout copies are intentionally preserved."
+}

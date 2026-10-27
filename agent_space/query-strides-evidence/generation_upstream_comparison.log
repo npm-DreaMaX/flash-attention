@@ -1,0 +1,8 @@
+W1027 14:52:42.604000 1153808 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1027 14:52:42.605000 1153808 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1027 14:52:42.606000 1153808 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+/opt/data/private/FangWang/research/mlp_redesign_20261027/fa2_current/agent_space/scripts/check_serving_with_upstream_helper.py:15: UserWarning: Test0:
+Matched tokens:	['ing', ',', ' and', ' the', ' ', '1', '9', '8', '0', 's']
+candidate:	'ing, and the 1980s, the 1990s, and the 2000s. The 19'	{',': -2.241192102432251, '.': -2.241192102432251, ' and': -2.803692102432251, '.\n': -3.678692102432251, ' to': -3.741192102432251}
+baseline:	'ing, and the 1980s. The 1980s were a time of great change in the United States, and the economy'	{'.': -2.1886301040649414, ',': -2.2511301040649414, ' and': -2.8136301040649414, '.\n': -3.6886301040649414, ' in': -3.7511301040649414}
+  check_logprobs_close(outputs_0_lst=results[0],outputs_1_lst=results[1],name_0='candidate',name_1='baseline')

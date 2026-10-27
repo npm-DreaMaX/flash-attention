@@ -1,0 +1,22 @@
+[
+  "cmake",
+  "-S",
+  "/opt/data/private/FangWang/research/mlp_redesign_20261027/fa2_patch",
+  "-B",
+  "/opt/data/private/FangWang/research/mlp_redesign_20261027/fa2_current/agent_space/full_extension_build",
+  "-G",
+  "Ninja",
+  "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+  "-DPython_EXECUTABLE=/opt/data/private/FangWang/research/pr_engineering_20261026/.venv/bin/python",
+  "-DVLLM_PYTHON_PATH=/opt/data/private/FangWang/research/mlp_redesign_20261027/fa2_current/agent_space/scripts:/opt/data/private/FangWang/research/pr_engineering_20261026/.venv/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages:/opt/data/private/FangWang/research/pr_engineering_20261026/.venv/lib/python3.12/site-packages/nvidia_cutlass_dsl/dsl_packages:/opt/data/private/FangWang/research/pr_engineering_20261026/vllm:/opt/data/private/FangWang/envs/vllm-dev/lib/python312.zip:/opt/data/private/FangWang/envs/vllm-dev/lib/python3.12:/opt/data/private/FangWang/envs/vllm-dev/lib/python3.12/lib-dynload:/opt/data/private/FangWang/research/pr_engineering_20261026/.venv/lib/python3.12/site-packages:__editable__.vllm-0.32.1rc1.dev510+gae3bc684e.cu129.finder.__path_hook__",
+  "-DCMAKE_CXX_COMPILER=/opt/data/private/FangWang/tools/cuda-12.9/bin/x86_64-conda-linux-gnu-g++",
+  "-DCMAKE_CUDA_COMPILER=/opt/data/private/FangWang/tools/cuda-12.9/bin/nvcc",
+  "-DCMAKE_CUDA_HOST_COMPILER=/opt/data/private/FangWang/tools/cuda-12.9/bin/x86_64-conda-linux-gnu-g++",
+  "-DCUDA_TOOLKIT_INCLUDE=/opt/data/private/FangWang/tools/cuda-12.9/targets/x86_64-linux/include",
+  "-DCUDA_CUDART_LIBRARY=/opt/data/private/FangWang/tools/cuda-12.9/targets/x86_64-linux/lib/libcudart.so",
+  "-DCUDA_cuda_driver_LIBRARY=/lib/x86_64-linux-gnu/libcuda.so",
+  "-DCUDA_nvrtc_LIBRARY=/opt/data/private/FangWang/research/pr_engineering_20261026/.venv/lib/python3.12/site-packages/nvidia/cuda_nvrtc/lib/libnvrtc.so.12",
+  "-DCUDAToolkit_ROOT=/opt/data/private/FangWang/tools/cuda-12.9",
+  "-DCMAKE_CUDA_ARCHITECTURES=89",
+  "-DNVCC_THREADS=2"
+]
